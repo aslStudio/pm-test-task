@@ -1,0 +1,11 @@
+services:
+  back:
+    build: ./back
+    restart: unless-stopped
+  front:
+    build: ./front
+    ports:
+      - "8088:80"
+    depends_on:
+      - back
+    restart: unless-stopped

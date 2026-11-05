@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #dfe7e6;
+  border-radius: 14px;
+  box-shadow: 0 4px 22px #173f3208;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 650;
+
+  input[type='file'] { max-width: 380px; }
+  input[type='date'] {
+    padding: 10px;
+    border: 1px solid #cbd7d5;
+    border-radius: 8px;
+  }
+}
+
+.submit {
+  padding: 12px 18px;
+  color: #fff;
+  background: #08776c;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+
+  &:disabled { opacity: .5; cursor: default; }
+}
+
+.count { padding-bottom: 11px; color: #68777e; font-size: 13px; }
+.error { padding: 14px; margin-top: 16px; color: #9b3030; background: #ffeded; border-radius: 8px; }
